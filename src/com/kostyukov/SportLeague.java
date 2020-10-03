@@ -26,9 +26,9 @@ public class SportLeague<T extends Team>
 	
 	public void printTeams()
 	{
-		ArrayList<T> temp = new ArrayList<>(teams);
-		Collections.sort(temp);
-		for (T item : temp)
+		Collections.sort(teams);
+		System.out.println("\nSport league - " + name);
+		for (T item : teams)
 		{
 			System.out.println("Team: " + item.getName() + ", with score: " + item.getScore());
 		}
