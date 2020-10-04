@@ -6,4 +6,9 @@ public class BaseballTeam extends Team
 	{
 		super(name);
 	}
+	
+	public BaseballTeam(String name, int score)
+	{
+		super(name, score);
+	}
 }

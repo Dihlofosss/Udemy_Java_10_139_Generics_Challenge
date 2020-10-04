@@ -10,6 +10,12 @@ public abstract class Team implements Comparable<Team>
 		this.name = name;
 	}
 	
+	public Team(String name, int score)
+	{
+		this.name = name;
+		this.score = score;
+	}
+	
 	public String getName()
 	{
 		return name;

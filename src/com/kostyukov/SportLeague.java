@@ -6,17 +6,17 @@ import java.util.Collections;
 public class SportLeague<T extends Team>
 {
 	private String name;
-	private ArrayList<T> teams;
+	private ArrayList<T> teamsList;
 	
 	public SportLeague(String name)
 	{
 		this.name = name;
-		teams = new ArrayList<>();
+		teamsList = new ArrayList<>();
 	}
 	
 	public void addTeam(T team)
 	{
-		teams.add(team);
+		teamsList.add(team);
 	}
 	
 	public String getName()
@@ -26,11 +26,11 @@ public class SportLeague<T extends Team>
 	
 	public void printTeams()
 	{
-		Collections.sort(teams);
+		Collections.sort(teamsList);
 		System.out.println("\nSport league - " + name);
-		for (T item : teams)
+		for (T team : teamsList)
 		{
-			System.out.println("Team: " + item.getName() + ", with score: " + item.getScore());
+			System.out.println("Team: " + team.getName() + ", with score: " + team.getScore());
 		}
 	}
 }
