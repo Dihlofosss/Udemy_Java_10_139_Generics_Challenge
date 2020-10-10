@@ -16,6 +16,11 @@ public class SportLeague<T extends Team>
 	
 	public void addTeam(T team)
 	{
+		if (teamsList.contains(team))
+		{
+			System.out.println("Team - " + team.getName() + " is already on the list");
+			return;
+		}
 		teamsList.add(team);
 	}
 	
